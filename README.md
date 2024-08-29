@@ -23,7 +23,7 @@ This section will described the synthetic dataset we use in our experiments.
 ### Dataset
 The datasets considered are images (MNIST, CIFAR10, CIFAR100 and ImageNet) and audio sound (ESC-50). In order to use thos datasets in our experiments, there is a need to extract the features from the images using either CLIP or ImageBind. The codes that was used to do it is available in the folder "Code_to_extract_features_and_prepare_datasets" but it is required to download the source files from CLIP (https://github.com/openai/CLIP) and ImageBind (https://github.com/facebookresearch/ImageBind) to use it.
 
-To use the available code, ensure that the feature are stored according to this template : Features --> Embedding space -- > Train --> feature files.
+To use the available code, ensure that the feature are stored according to template defined in the extracting code.
 
 For example, to run the tutorial, the MNIST features provided by ImageBind should be stored this way : 
  
