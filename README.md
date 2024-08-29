@@ -23,11 +23,27 @@ This section will described the synthetic dataset we use in our experiments.
 ### Dataset
 The datasets considered are images (MNIST, CIFAR10, CIFAR100 and ImageNet) and audio sound (ESC-50). In order to use thos datasets in our experiments, there is a need to extract the features from the images using either CLIP or ImageBind. The codes that was used to do it is available in the folder "Code_to_extract_features_and_prepare_datasets" but it is required to download the source files from CLIP (https://github.com/openai/CLIP) and ImageBind (https://github.com/facebookresearch/ImageBind) to use it.
 
+To use the available code, ensure that the feature are stored according to this template : Features --> Embedding space -- > Train --> feature files.
+
+For example, to run the tutorial, the MNIST faetures should be stored this way : 
+ 
+Features
+|
+|__IMAGEBIND
+        |
+        |__Train
+              |
+              |__1.pt ...
+        |
+        |__ Test
+              |
+              |__2.pt ...
+
 ### Tutorial
 A Jupyter Notebook is avaiable to illustrate the creation of the dataset, the training of our classifier and the visualization of the the trained parameters of the network.
 
 ## Other code
-A lot of files are avialble to run the experiments on the several dataset. In thos file, you just need to replace the PATH to the folder containing the feature extracted by CLIP and ImageBind and to the dataset. Custom dataset has been implemented and are available in the "src" folder to load from the disk the feature on the go.
+A lot of files are avialble to run the experiments on the several dataset. In thos file, you just need to replace the PATH to the folder containing the feature extracted by CLIP and/or ImageBind and also specify where the dataset is stored on the disk. Custom datasets have been implemented and are available in the "src" folder to load from the disk the feature on the go.
 
 ## Requirements
 This code wa developped in python 3.10. The specific version of the main packages used in this repository are detailled in the ```requirements.txt``` file.
