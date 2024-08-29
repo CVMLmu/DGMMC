@@ -59,6 +59,8 @@ A Jupyter Notebook is avaiable to illustrate the creation of the dataset, the tr
 ## Other code
 A lot of files are avialble to run the experiments on the several dataset. In thos file, you just need to replace the PATH to the folder containing the feature extracted by CLIP and/or ImageBind and also specify where the dataset is stored on the disk. Custom datasets have been implemented and are available in the "src" folder to load from the disk the feature on the go.
 
+The code to gather the results and plot some of them is also available.
+
 ## Requirements
 This code wa developped in python 3.10. The specific version of the main packages used in this repository are detailled in the ```requirements.txt``` file.
 
