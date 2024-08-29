@@ -3,6 +3,12 @@
 
 This GitHub repository houses the implementation of a Deep Gaussian Mixture Model classifier (DGMMC) for image classification, with an emphasis on capturing complex data distributions. The model is implemented using a deep neural network architecture (using Pytorch impementation) to efficiently learn intricate patterns within data. It is mainly test on features provded by pretrained models such as CLIP or ImageBind in order to use the information already captured without retraining the whole model. The classifier proposed by Hayashi et al. (https://github.com/HideakiHayashi/SDGM_ICLR2021) is also considered in our experiments.
 
+Please cite our paper related to this work:
+```
+@techreport{
+}
+```
+
 ## Key features
 
 - Deep Gaussian Mixture Model Implementation: The repository includes well-documented code for the Deep Gaussian Mixture Model, leveraging a neural network to model the latent structure of the data through a mixture of Gaussian distributions.
@@ -14,7 +20,7 @@ This GitHub repository houses the implementation of a Deep Gaussian Mixture Mode
 ## Usage:
 
 1. Clone the repository to your local machine.
-1. Explore the src directory to find the DGMMC implementation
+1. Explore the ```src``` directory to find the DGMMC implementation
 1. Run the experiments on the MNIST dataset using the  Jupyter Notebook ```Example.ipynb``` that is available to illustrate the creation of the dataset, the training of our classifier and the visualization of  the trained parameters of the network.
 
 
