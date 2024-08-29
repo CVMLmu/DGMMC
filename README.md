@@ -1,33 +1,33 @@
 
 # DGMMC : Deep Gaussian Mixture Model Classifier
 
-This GitHub repository houses the implementation of a Deep Gaussian Mixture Model classifier (DGMMC) for image classification, with an emphasis on capturing complex data distributions. The model is implemented using a deep neural network architecture (using Pytorch impementation) to efficiently learn intricate patterns within data.
+This GitHub repository houses the implementation of a Deep Gaussian Mixture Model classifier (DGMMC) for image classification, with an emphasis on capturing complex data distributions. The model is implemented using a deep neural network architecture (using Pytorch impementation) to efficiently learn intricate patterns within data. It is mainly test on features provded by pretrained models such as CLIP or ImageBind in order to use the information already captured without retraining the whole model. The classifier proposed by Hayashi et al. (https://github.com/HideakiHayashi/SDGM_ICLR2021) is also considered in our experiments.
 
 ## Key features
 
 - Deep Gaussian Mixture Model Implementation: The repository includes well-documented code for the Deep Gaussian Mixture Model, leveraging a neural network to model the latent structure of the data through a mixture of Gaussian distributions.
 
-- Preliminary Experiments on Synthetic Dataset: The code comes with an example set of preliminary experiments conducted on a synthetic dataset. This allows users to understand the model's behavior in controlled settings and assess its performance in capturing underlying data structures.
+- Image classification using pretrained models as feature extractor : Experiment using CLIP and ImageBind to extract features from the several datasets (MNIST, CIFAR10, CIFAR100, ESC-50 and ImageNet) and directly use classifer on top of it for image classification.
 
-- Results and Visualizations: Detailed results from the experiments, including performance metrics, visualizations of the learned distributions, and comparisons with ground truth, are provided. This helps users evaluate the efficacy of the DGMM on synthetic data.
+- Feature dimension reduction : We propose to reduce the feature dimension using a learnt linear layer and a PCA decomposition.
 
 ## Usage:
 
 1. Clone the repository to your local machine.
 1. Explore the src directory to find the DGMMC implementation
-1. Run the experiments on the synthetic dataset using the provided Python scripts.
+1. Run the experiments on the MNIST dataset using the tutorial notebook.
 
-## Experiment on a Synthetic Dataset
-This section will described the synthetic dataset we use in our experiments and also provide elements for the comprehension of the results that are stored as .csv file in this repository.
+## Experiment on different dataset
+This section will described the synthetic dataset we use in our experiments.
 
 ### Dataset
-The synthetic dataset consist of a set of points in 2D where each point is associated to two features which are its spatial position in the 2d space. Those points are created as samples randomly provided by spherical Multivariate Gaussian Distribution with known parameters (means, covariance matrix, ...) and this for 6 different configuration. The points created for this preliminary experiments are stored as .csv file in the experiments folder and the script create_data.py was used to create all the points.
-
-### Results
-In the experiments folder, you can find the complete ```GMM_spherical_complete_results.csv``` file that contains our results for the different configuration in terms of accuracy for image classifiation, but also the Mean square Error (MSE) between our model and the parameters of the Gaussian that ware used to provide the points intialy. For each results, we trained 6 neural network and provided the average results over those 6 runs as long as the standard deviation and the standard error.
+The datasets considered are images (MNIST, CIFAR10, CIFAR100 and ImageNet) and audio sound (ESC-50). In order to use thos datasets in our experiments, there is a need to extract the features from the images using either CLIP or ImageBind. The codes that was used to do it is available in the folder "Code_to_extract_features_and_prepare_datasets" but it is required to download the source files from CLIP (https://github.com/openai/CLIP) and ImageBind (https://github.com/facebookresearch/ImageBind) to use it.
 
 ### Tutorial
 A Jupyter Notebook is avaiable to illustrate the creation of the dataset, the training of our classifier and the visualization of the the trained parameters of the network.
+
+## Other code
+A lot of files are avialble to run the experiments on the several dataset. In thos file, you just need to replace the PATH to the folder containing the feature extracted by CLIP and ImageBind and to the dataset. Custom dataset has been implemented and are available in the "src" folder to load from the disk the feature on the go.
 
 ## Requirements
 This code wa developped in python 3.10. The specific version of the main packages used in this repository are detailled in the ```requirements.txt``` file.
