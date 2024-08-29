@@ -15,8 +15,7 @@ This GitHub repository houses the implementation of a Deep Gaussian Mixture Mode
 
 1. Clone the repository to your local machine.
 1. Explore the src directory to find the DGMMC implementation
-1. Run the experiments on the MNIST dataset using the tutorial notebook. 
-A Jupyter Notebook is available to illustrate the creation of the dataset, the training of our classifier and the visualization of the the trained parameters of the network.
+1. Run the experiments on the MNIST dataset using the  Jupyter Notebook 'Example.ipynb' that is available to illustrate the creation of the dataset, the training of our classifier and the visualization of the the trained parameters of the network.
 
 
 ## Experiment on different dataset
