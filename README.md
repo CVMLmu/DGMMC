@@ -25,19 +25,33 @@ The datasets considered are images (MNIST, CIFAR10, CIFAR100 and ImageNet) and a
 
 To use the available code, ensure that the feature are stored according to this template : Features --> Embedding space -- > Train --> feature files.
 
-For example, to run the tutorial, the MNIST faetures should be stored this way : 
+For example, to run the tutorial, the MNIST features provided by ImageBind should be stored this way : 
  
-Features
-|
-|__IMAGEBIND
-        |
-        |__Train
-              |
-              |__1.pt ...
-        |
-        |__ Test
-              |
-              |__2.pt ...
+```
+Project
+│   README.md
+│   code_to_execute_MNIST.py  
+│
+└───Features
+     |
+     |
+     └───MNIST
+           |
+           |
+           └───ImageBind
+                    │   
+                    │   
+                    │
+                    └───Train
+                    |     │   file1.pt
+                    |     │   file2.pt
+                    |     │   ...
+                    ───Test
+                          │   file1.pt
+                          │   file2.pt
+                          │   ...
+  
+```
 
 ### Tutorial
 A Jupyter Notebook is avaiable to illustrate the creation of the dataset, the training of our classifier and the visualization of the the trained parameters of the network.
