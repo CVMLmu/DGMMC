@@ -21,13 +21,11 @@ doi={upcoming},
 1. Explore the ```src``` directory to find the DGMMC implementation
 1. Run the experiments on the MNIST dataset using the  Jupyter Notebook ```Example.ipynb``` that is available to illustrate the creation of the dataset, the training of our classifier and the visualization of  the trained parameters of the network.
 
-
 ## Experiment on other datasets
 
-The datasets tested were image datasets (MNIST, CIFAR10, CIFAR100 and ImageNet) and audio sound (ESC-50). In order to use those datasets, features need to be computed using either CLIP or ImageBind. The code that was used to do it is available in the folder <a href="./Code_to_extract_features_and_prepare_datasets">Code_to_extract_features_and_prepare_datasets</a> but it is required to download the source files from <a href="https://github.com/openai/CLIP">CLIP</a>  and 
-<a href="https://github.com/facebookresearch/ImageBind">ImageBind</a>  to use it.
-
-To use the available code, ensure that the feature are stored according to template defined in the extracting code.
+The datasets tested were of images  (MNIST, CIFAR10, CIFAR100 and ImageNet) and audio sounds (ESC-50). In order to use those datasets, features need to be computed using either CLIP or ImageBind using the code available in the folder <a href="./Code_to_extract_features_and_prepare_datasets">Code_to_extract_features_and_prepare_datasets</a>. Note, source files from <a href="https://github.com/openai/CLIP">CLIP</a>  and 
+<a href="https://github.com/facebookresearch/ImageBind">ImageBind</a>  need to be dowdloaded.
+To use our  code, ensure that the feature are stored according to template defined in the extracting code.
 
 For example, to run the tutorial, the MNIST features provided by ImageBind should be stored this way : 
  
@@ -58,15 +56,16 @@ Project
 ```
 
 
-## Other code
-A lot of files are avialble to run the experiments on the several dataset. In thos file, you just need to replace the PATH to the folder containing the feature extracted by CLIP and/or ImageBind and also specify where the dataset is stored on the disk. Custom datasets have been implemented and are available in the "src" folder to load from the disk the feature on the go.
-
-The code to gather the results and plot some of them is also available.
+Additional files are also provided to run the experiments on the other datasets. 
+In those files, you just need to replace the PATH to the folder containing the feature extracted by CLIP and/or ImageBind and also specify where the dataset is stored on the disk. Custom datasets have been implemented and are available in the "src" folder to load from the disk the feature on the go.
+Additional  codes to collect results and to provide plots are also available in this repo.
 
 ## Requirements
-This code wa developped in python 3.10. The specific version of the main packages used in this repository are detailled in the ```requirements.txt``` file.
+
+This code was developped in python 3.10. The specific version of the main packages used in this repository are detailled in the ```requirements.txt``` file.
 
 ## Contributions and Issues:
+
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
 ## License:
