@@ -1,8 +1,8 @@
 
 # DGMMC : Deep Gaussian Mixture Model Classifier
 
-This GitHub repository houses the implementation of a **Deep Gaussian Mixture Model classifier (DGMMC)** for image classification, with an emphasis on capturing complex data distributions. The model is implemented using a deep neural network architecture using Pytorch implementation. It is mainly tested on features provided by pretrained models such as CLIP or ImageBind in order to use the information already captured without retraining the whole model. 
-The <a href="https://github.com/HideakiHayashi/SDGM_ICLR2021" target="_blank">SDGM classifier</a> proposed by Hayashi et al.  is also considered in our experiments.
+This GitHub repository houses the implementation of a **Deep Gaussian Mixture Model classifier (DGMMC)** for image classification, with an emphasis on capturing complex data distributions. The model is implemented using a deep neural network architecture using Pytorch implementation. It has been mainly tested on features provided by pretrained models such as CLIP or ImageBind in order to use the information already captured without retraining the whole model. 
+The <a href="https://github.com/HideakiHayashi/SDGM_ICLR2021" target="_blank">SDGM classifier</a> proposed by Hayashi et al.  is also considered in our experiments (see paper).
 
 **Please cite our paper related to this work:**
 ```
@@ -14,14 +14,6 @@ month={October},
 doi={upcoming},
 }
 ```
-
-## Key features
-
-- Deep Gaussian Mixture Model Implementation: The repository includes well-documented code for the Deep Gaussian Mixture Model, leveraging a neural network to model the latent structure of the data through a mixture of Gaussian distributions.
-
-- Image classification using pretrained models as feature extractor : Experiment using CLIP and ImageBind to extract features from the several datasets (MNIST, CIFAR10, CIFAR100, ESC-50 and ImageNet) and directly use classifer on top of it for image classification.
-
-- Feature dimension reduction : We propose to reduce the feature dimension using a learnt linear layer and a PCA decomposition.
 
 ## Usage:
 
