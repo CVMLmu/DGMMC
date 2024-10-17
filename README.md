@@ -22,11 +22,10 @@ doi={upcoming},
 1. Run the experiments on the MNIST dataset using the  Jupyter Notebook ```Example.ipynb``` that is available to illustrate the creation of the dataset, the training of our classifier and the visualization of  the trained parameters of the network.
 
 
-## Experiment on different dataset
+## Experiment on other datasets
 
-### Datasets
-
-The datasets considered are images (MNIST, CIFAR10, CIFAR100 and ImageNet) and audio sound (ESC-50). In order to use thos datasets in our experiments, there is a need to extract the features from the images using either CLIP or ImageBind. The codes that was used to do it is available in the folder "Code_to_extract_features_and_prepare_datasets" but it is required to download the source files from CLIP (https://github.com/openai/CLIP) and ImageBind (https://github.com/facebookresearch/ImageBind) to use it.
+The datasets tested were image datasets (MNIST, CIFAR10, CIFAR100 and ImageNet) and audio sound (ESC-50). In order to use those datasets, features need to be computed using either CLIP or ImageBind. The code that was used to do it is available in the folder "Code_to_extract_features_and_prepare_datasets" but it is required to download the source files from <a href="https://github.com/openai/CLIP">CLIP</a>  and 
+<a href="https://github.com/facebookresearch/ImageBind">ImageBind</a>  to use it.
 
 To use the available code, ensure that the feature are stored according to template defined in the extracting code.
 
