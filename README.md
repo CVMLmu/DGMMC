@@ -24,7 +24,7 @@ doi={upcoming},
 
 ## Experiment on other datasets
 
-The datasets tested were image datasets (MNIST, CIFAR10, CIFAR100 and ImageNet) and audio sound (ESC-50). In order to use those datasets, features need to be computed using either CLIP or ImageBind. The code that was used to do it is available in the folder "Code_to_extract_features_and_prepare_datasets" but it is required to download the source files from <a href="https://github.com/openai/CLIP">CLIP</a>  and 
+The datasets tested were image datasets (MNIST, CIFAR10, CIFAR100 and ImageNet) and audio sound (ESC-50). In order to use those datasets, features need to be computed using either CLIP or ImageBind. The code that was used to do it is available in the folder <a href="./Code_to_extract_features_and_prepare_datasets">Code_to_extract_features_and_prepare_datasets</a> but it is required to download the source files from <a href="https://github.com/openai/CLIP">CLIP</a>  and 
 <a href="https://github.com/facebookresearch/ImageBind">ImageBind</a>  to use it.
 
 To use the available code, ensure that the feature are stored according to template defined in the extracting code.
