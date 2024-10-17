@@ -19,7 +19,7 @@ doi={upcoming},
 
 1. Clone the repository to your local machine.
 1. Explore the ```src``` directory to find the DGMMC implementation
-1. A  Jupyter Notebook ```Example.ipynb``` on the CIFAR100 dataset  is provided to illustrate the creation of the dataset, the training of our classifier and the visualization of  the trained parameters of the network. Note that before running  code provided, features (CLIP or ImageBind) need to be computed and stored as explained below and some hardcoded PATH (i.e. look for */home/* in ```*.py``` files) needs to be updated. 
+1. A  Jupyter Notebook <a href="./Example.ipynb">Example.ipynb</a> on the CIFAR100 dataset  is provided to illustrate the creation of the dataset, the training of our classifier and the visualization of  the trained parameters of the network. Note that before running  code provided, features (CLIP or ImageBind) need to be computed and stored as explained below and some hardcoded PATH (i.e. look for */home/* in ```*.py``` files) needs to be updated. 
 
 ## Experiment on other datasets
 
