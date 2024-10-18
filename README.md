@@ -15,7 +15,7 @@ archivePrefix={arXiv},
 primaryClass={cs.CV},
 url={https://arxiv.org/abs/2410.13421}, 
 month={October},
-doi={upcoming},
+doi={10.48550/arXiv.2410.13421},
 }
 ```
 
@@ -66,11 +66,8 @@ Additional  codes to collect results and to provide plots are also available in 
 
 ## Requirements
 
-This code was developped in python 3.10. The specific version of the main packages used in this repository are detailled in the ```requirements.txt``` file.
+This code was developped in python 3.10. 
 
-## Contributions and Issues:
-
-Contributions are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
 ## License:
 This code is available under the [MIT](https://choosealicense.com/licenses/mit/) License.
