@@ -8,7 +8,7 @@ The <a href="https://github.com/HideakiHayashi/SDGM_ICLR2021" target="_blank">SD
 ```
 @techreport{DGMMC2024,
 title={Performance of Gaussian Mixture Model Classifiers on Embedded Feature Spaces},
-authors={Jeremy Chopin and Rozenn Dahyot},
+author={Jeremy Chopin and Rozenn Dahyot},
 year={2024},
 eprint={2410.13421},
 archivePrefix={arXiv},
